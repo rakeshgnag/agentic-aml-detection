@@ -1,0 +1,154 @@
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  color: #17212b;
+  background: #f4f6f8;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+button {
+  border: 1px solid #1d4e89;
+  border-radius: 0.5rem;
+  padding: 0.65rem 0.9rem;
+  color: #fff;
+  background: #1d4e89;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:focus-visible {
+  outline: 3px solid #f2a900;
+  outline-offset: 3px;
+}
+
+.page {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 1.5rem;
+}
+
+.status-card {
+  width: min(100%, 38rem);
+  border: 1px solid #d7dee5;
+  border-radius: 0.9rem;
+  padding: clamp(1.5rem, 5vw, 2.5rem);
+  background: #fff;
+  box-shadow: 0 1rem 2.5rem rgb(23 33 43 / 8%);
+}
+
+.eyebrow,
+.status-label {
+  color: #526170;
+  font-size: 0.9rem;
+}
+
+.eyebrow {
+  margin-top: 0;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0.5rem 0 2rem;
+  font-size: clamp(1.75rem, 6vw, 2.5rem);
+  line-height: 1.15;
+}
+
+.status-label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.connection-status {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0 0 1.25rem;
+  font-weight: 600;
+}
+
+.status-indicator {
+  width: 0.7rem;
+  height: 0.7rem;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: #667788;
+}
+
+.connection-status--connected .status-indicator {
+  background: #16794b;
+}
+
+.connection-status--unavailable .status-indicator {
+  background: #b42318;
+}
+
+.import-section {
+  margin-top: 2rem;
+  border-top: 1px solid #d7dee5;
+  padding-top: 1.5rem;
+}
+
+.import-section h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+}
+
+.import-section p {
+  color: #526170;
+}
+
+.import-section label {
+  display: block;
+  margin: 1rem 0 0.4rem;
+  font-weight: 600;
+}
+
+.import-section input[type="file"] {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  font: inherit;
+}
+
+.import-section button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.selected-file {
+  overflow-wrap: anywhere;
+}
+
+.upload-message {
+  min-height: 1.5rem;
+  margin-bottom: 0;
+}
+
+.upload-message--error {
+  color: #b42318 !important;
+  font-weight: 600;
+}
+
+.upload-message--accepted {
+  color: #16794b !important;
+  font-weight: 600;
+}
+
+.upload-errors {
+  padding-left: 1.25rem;
+  color: #b42318;
+}

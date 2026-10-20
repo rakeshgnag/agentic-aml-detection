@@ -1,0 +1,4 @@
+source_transaction_id,timestamp,sender_id,receiver_id,amount,currency
+repeat-001,2026-10-20T10:00:00Z,synthetic-A,synthetic-B,100.00,USD
+repeat-002,2026-10-20T12:00:00Z,synthetic-A,synthetic-B,250.00,USD
+repeat-003,2026-10-20T14:00:00Z,synthetic-A,synthetic-B,175.00,USD
